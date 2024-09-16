@@ -9,7 +9,7 @@ import SparkelIcon from "@/assets/icons/sparkle.svg";
 const HeroSection = () => {
   return (
     <div className="relative z-0 overflow-x-clip py-32 md:py-48 lg:py-60">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{ backgroundImage: `url(${grainImage.src})` }}
