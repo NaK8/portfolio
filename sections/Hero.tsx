@@ -8,7 +8,7 @@ import SparkelIcon from "@/assets/icons/sparkle.svg";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-0 overflow-x-clip py-32 md:py-48 lg:py-60">
+    <section className="relative z-0 overflow-x-clip py-32 md:py-48 lg:py-60">
       <div className="pointer-events-none absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div
           className="absolute inset-0 -z-30 opacity-5"
@@ -107,7 +107,7 @@ const HeroSection = () => {
           />
           <div className="inline-flex items-center gap-4 rounded-lg border border-gray-800 bg-gray-950 px-4 py-1.5">
             <div className="relative size-2.5 rounded-full bg-green-500">
-              <div className="animate-ping-large absolute inset-0 rounded-full bg-green-500"></div>
+              <div className="absolute inset-0 animate-ping-large rounded-full bg-green-500"></div>
             </div>
             <div className="text-sm font-medium">
               Available for new projects
@@ -134,7 +134,7 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
