@@ -31,6 +31,17 @@ const config: Config = {
         serif: ["var(--font-serif)"],
         sans: ["var(--font-sans)"],
       },
+      animation: {
+        "ping-large": "ping-large 1s ease-in-out infinite",
+      },
+      keyframes: {
+        "ping-large": {
+          "70%, 100%": {
+            transform: "scale(3)",
+            opacity: "0",
+          },
+        },
+      },
     },
   },
   plugins: [],
