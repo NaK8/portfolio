@@ -108,7 +108,7 @@ const hobbies = [
 
 const AboutSection = () => {
   return (
-    <div className="py-20 lg:py-28">
+    <section id="about-me" className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
           eyebrow="About Me"
@@ -172,7 +172,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

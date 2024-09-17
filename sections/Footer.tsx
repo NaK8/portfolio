@@ -32,7 +32,7 @@ const Footer = () => {
                 href={link.href}
                 key={crypto.randomUUID()}
                 className="inline-flex items-center gap-1.5"
-                target="_blank"
+                target={link.href === "#" ? "_self" : "_blank"}
               >
                 <span className="font-semibold">{link.title}</span>
                 <ArrowUpRightIcon className="size-4" />
