@@ -57,10 +57,11 @@ const ProjectsSection = () => {
           description="See how i transformed concepts into engaging digital experiences"
         />
         <div className="mt-10 flex flex-col gap-20 md:mt-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, i) => (
             <Card
               key={crypto.randomUUID()}
-              className="px-8 pb-0 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              className="sticky px-8 pb-0 pt-8 md:px-10 md:pt-12 lg:px-20 lg:pt-16"
+              style={{ top: `calc(64px + ${i * 40}px)` }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
