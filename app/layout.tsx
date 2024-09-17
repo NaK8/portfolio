@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
@@ -10,26 +11,9 @@ const calistoga = Calistoga({
   weight: ["400"],
 });
 
-// const PPmori = localFont({
-//   src: [
-//     {
-//       path: "./fonts/PPMori-Regular.woff2",
-//       weight: "400",
-//     },
-
-//     {
-//       path: "./fonts/PPMori-SemiBold.woff2",
-//       weight: "700",
-//     },
-//   ],
-//   display: "swap",
-//   variable: "--font-ppmori",
-// });
-
 export const metadata: Metadata = {
   title: "Nabeel Ahmed",
   description: "Under Construction",
-  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({
@@ -47,6 +31,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <GoogleAnalytics gaId="G-3P3L8Z85NE" />
       </body>
     </html>
   );
